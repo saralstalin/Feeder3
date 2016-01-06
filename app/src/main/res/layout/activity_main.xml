@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.azurewebsites.fishprice.feeder3.MainActivity">
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:format12Hour="MMM dd, yyyy k:mm:ss a"
+        android:paddingBottom="30dp"
+        android:textSize="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRoutes">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="Route"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/SpinnerRoutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="Schedule"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/SpinnerSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="fill_parent" />
+    <ListView
+        android:id="@+id/ListViewStatus"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+    <TextView
+        android:id="@+id/textViewAccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>
+
+
+

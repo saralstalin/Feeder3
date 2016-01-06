@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Feeder</string>
+    <string name="title_activity_main_activity_start_up">MainActivityStartUp</string>
+    <string name="routes_url">http://fishprice.azurewebsites.net/handlers/getRoutes.ashx</string>
+    <string name="schedule_url">http://fishprice.azurewebsites.net/handlers/getSchedules.ashx</string>
+    <string name="feeder_url">http://fishprice.azurewebsites.net/handlers/FeederData.ashx</string>
+    <string name="NoAccessMessage">This device is not authorized for feeder application access</string>
+</resources>
